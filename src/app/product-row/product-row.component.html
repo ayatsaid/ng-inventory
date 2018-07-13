@@ -1,0 +1,15 @@
+<div class="item" [ngClass]="{ selected: isSelected ? 'selected' : ''}">
+  <div class="row">
+    <div class="col-md-3">
+      <app-product-image [product]="product"></app-product-image>
+    </div>
+    <div class="col-md-7">
+      <div class="header">{{ product.name }}</div>
+      <div class="product-sku">SKU #{{ product.sku }}</div>
+    </div>
+    <div class="col-md-2">
+      <app-price-display [price]="product.price"></app-price-display>
+    </div>
+  </div>
+</div>
+<br>
